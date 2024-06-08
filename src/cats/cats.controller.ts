@@ -1,7 +1,8 @@
-import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, ParseIntPipe, Post, Put } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Post, Put } from '@nestjs/common';
 import { CreateCatDto } from './dto/create-cat.dto';
 import { UpdateCatDto } from './dto/update-cat.dto';
 import { CatsService } from './cats.service';
+import { ValidationPipe } from 'src/common/pipe/validation.pipe';
 
 @Controller('cats')
 export class CatsController {
@@ -27,7 +28,7 @@ export class CatsController {
   }
 
   @Get(':id')
-  findOne(@Param('id', ParseIntPipe) id: number): string {
+  findOne(@Param('id', ValidationPipe) id: number): string {
     return `This action returns a #${id} cat`
   }
 
