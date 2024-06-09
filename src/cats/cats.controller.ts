@@ -1,14 +1,16 @@
-import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Post, Put } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, ParseIntPipe, Post, Put, UsePipes } from '@nestjs/common';
 import { CreateCatDto } from './dto/create-cat.dto';
 import { UpdateCatDto } from './dto/update-cat.dto';
 import { CatsService } from './cats.service';
-import { ValidationPipe } from 'src/common/pipe/validation.pipe';
+import { ZodValidationPipe } from 'src/common/pipe/validation.pipe';
+import { createCatSchema } from './schema/create-cat.schema';
 
 @Controller('cats')
 export class CatsController {
   constructor(private catsService: CatsService) {}
 
   @Post()
+  @UsePipes(new ZodValidationPipe(createCatSchema))
   async create(@Body() createCatDto: CreateCatDto) {
     this.catsService.create(createCatDto);
   }
@@ -28,7 +30,7 @@ export class CatsController {
   }
 
   @Get(':id')
-  findOne(@Param('id', ValidationPipe) id: number): string {
+  findOne(@Param('id', ParseIntPipe) id: number): string {
     return `This action returns a #${id} cat`
   }
 
