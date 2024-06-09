@@ -10,7 +10,7 @@ Followinig NestJS [Documentations](https://docs.nestjs.com/)
 - [x] Modules
 - [x] Middleware
 - [ ] Exception filters
-- [ ] Pipes
+- [x] Pipes
 - [ ] Guards
 - [ ] Interceptors
 - [ ] Custom decorators
