@@ -12,7 +12,7 @@ Followinig NestJS [Documentations](https://docs.nestjs.com/)
 - [ ] Exception filters
 - [x] Pipes
 - [ ] Guards
-- [ ] Interceptors
+- [x] Interceptors
 - [ ] Custom decorators
 
 ### FUNDAMENTALS

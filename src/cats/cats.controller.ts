@@ -1,11 +1,13 @@
-import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, ParseIntPipe, Post, Put, UsePipes } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, ParseIntPipe, Post, Put, UseInterceptors, UsePipes } from '@nestjs/common';
 import { CreateCatDto } from './dto/create-cat.dto';
 import { UpdateCatDto } from './dto/update-cat.dto';
 import { CatsService } from './cats.service';
 import { ZodValidationPipe } from 'src/common/pipe/validation.pipe';
 import { createCatSchema } from './schema/create-cat.schema';
+import { LoggingInterceptor } from 'src/common/interceptor/logging.interceptor';
 
 @Controller('cats')
+@UseInterceptors(LoggingInterceptor)
 export class CatsController {
   constructor(private catsService: CatsService) {}
 
