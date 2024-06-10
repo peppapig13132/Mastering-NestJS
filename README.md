@@ -103,7 +103,7 @@ Followinig NestJS [Documentations](https://docs.nestjs.com/)
 - [ ] Interceptors
 
 ### STANDALONE APPS
-- [ ] 
+- [ ] Standalone apps
 
 ### CLI
 - [ ] Overview
@@ -161,7 +161,7 @@ Followinig NestJS [Documentations](https://docs.nestjs.com/)
 - [ ] CI/CD integration
 
 ### MIGRATION GUIDE
-- [ ] 
+- [ ] Migration guide
 
 ### DISCOVER
 
