@@ -16,7 +16,7 @@ Followinig NestJS [Documentations](https://docs.nestjs.com/)
 - [x] Custom decorators
 
 ### FUNDAMENTALS
-- [ ] Custom providers
+- [x] Custom providers
 - [ ] Asynchronous providers
 - [ ] Dynamic modules
 - [ ] Injection scopes
