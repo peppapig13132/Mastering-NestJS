@@ -17,7 +17,7 @@ Followinig NestJS [Documentations](https://docs.nestjs.com/)
 
 ### FUNDAMENTALS
 - [x] Custom providers
-- [ ] Asynchronous providers
+- [x] Asynchronous providers
 - [ ] Dynamic modules
 - [ ] Injection scopes
 - [ ] Circular dependency
