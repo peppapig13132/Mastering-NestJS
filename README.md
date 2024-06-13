@@ -20,7 +20,7 @@ Followinig NestJS [Documentations](https://docs.nestjs.com/)
 - [x] Asynchronous providers
 - [x] Dynamic modules
 - [x] Injection scopes
-- [ ] Circular dependency
+- [x] Circular dependency
 - [ ] Module reference
 - [ ] Lazy-loading modules
 - [ ] Execution context
