@@ -21,7 +21,7 @@ Followinig NestJS [Documentations](https://docs.nestjs.com/)
 - [x] Dynamic modules
 - [x] Injection scopes
 - [x] Circular dependency
-- [ ] Module reference
+- [x] Module reference
 - [ ] Lazy-loading modules
 - [ ] Execution context
 - [ ] Lifecycle events
